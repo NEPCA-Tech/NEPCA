@@ -3,11 +3,11 @@ body {
 }
 
 .navigation-menu {
-    background-color: darkred;    
+    background-color: darkred;
     padding: 1%;
     position: relative;
     text-align: center;
-    top:0;
+    top: 0;
 }
 
 .navigation-menu a {
@@ -19,5 +19,5 @@ body {
 }
 
 .navigation-menu a:hover {
- background-color: rgb(186, 26, 26);   
+    background-color: rgb(186, 26, 26);
 }
