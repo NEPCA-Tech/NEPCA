@@ -10,7 +10,7 @@ body {
     top: 0;
 }
 
-.navigation-menu a {
+.navigation-menu a, .about-menu a {
     color: white;
     font-size: 25px;
     padding: 1% 2%;
@@ -21,3 +21,36 @@ body {
 .navigation-menu a:hover {
     background-color: rgb(186, 26, 26);
 }
+
+.welcome {
+    background-color: orange;
+    margin: auto;
+    text-align: center;
+}
+.about-menu {
+    display: none;
+    font-size: 25px;
+    padding: 1% 2%;
+    margin: auto;
+    background-color: rgb(86, 172, 143);
+}
+.header {
+    padding: 1% 2%;
+    margin: auto;
+    text-align: center;
+}
+.navigation-menu:hover + .about-menu {
+    display: block !important;
+    font-size: 25px !important;
+    padding: 1% 2% !important;
+    margin: auto !important;
+    background-color: rgb(86, 172, 143) !important;
+}
+div {
+    margin: auto;
+    text-align: center;
+}
+.text {
+    font-size: 30px;
+}
+
