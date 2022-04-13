@@ -4,15 +4,15 @@ body {
 
 .navigation-menu {
     background-color: darkred;
-    padding: 1%;
+    display: block;
     position: relative;
     text-align: center;
     top: 0;
 }
 
-.navigation-menu a, .about-menu a {
+.navigation-menu a {
     color: white;
-    font-size: 25px;
+    font-size: 2.5vh;
     padding: 1% 2%;
     transition: 0.25s;
     text-decoration: none;
@@ -22,35 +22,65 @@ body {
     background-color: rgb(186, 26, 26);
 }
 
-.welcome {
-    background-color: orange;
-    margin: auto;
-    text-align: center;
-}
-.about-menu {
-    display: none;
-    font-size: 25px;
+.dropdown {
+    display: inline-block;
     padding: 1% 2%;
-    margin: auto;
-    background-color: rgb(86, 172, 143);
+    position: relative;
+
 }
-.header {
-    padding: 1% 2%;
-    margin: auto;
-    text-align: center;
+
+.dropdown:hover{
+    background-color: rgb(186, 26, 26);
 }
-.navigation-menu:hover + .about-menu {
+
+.dropdown:hover .drop-menu {
+    color: white;
     display: block !important;
-    font-size: 25px !important;
-    padding: 1% 2% !important;
-    margin: auto !important;
-    background-color: rgb(86, 172, 143) !important;
+    padding: 10% 15% !important;
+    position: absolute;
+    top: 80%;
+    left: 0 !important;
+    background-color: darkblue !important;
 }
+
+.drop-menu {
+    display: none;
+}
+
+.drop-menu a{
+    padding: 10% 0%;
+}
+
+.drop-menu a:hover{
+    padding: 10% 0%;
+    background-color: rgb(42, 42, 207);
+
+}
+
+.header {
+    padding: 10% 0%;
+    margin: auto;
+    text-align: center;
+}
+
 div {
     margin: auto;
     text-align: center;
 }
-.text {
-    font-size: 30px;
+
+.text h1{
+    font-size: 100px;
 }
 
+.text {
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcome {
+    background-color: orange;
+    margin: auto;
+    display:flow-root;
+    text-align: center;
+}
